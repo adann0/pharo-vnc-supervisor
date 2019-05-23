@@ -20,6 +20,12 @@ You can access the running squeak image via VNC client or web browser.
 - VNC client:  `yourhost:5901`
 - Web browser: `http://yourhost:6901/?password=vncpassword`
 
+To backup your shared folder you can run something like this :
+
+```bash
+docker cp <containerId>:/squeak/shared /your/path/destination
+```
+
 ## How to start with a customized Squeak image
 
 1. Place your customized Squeak image to your docker-host data directory (For example, `/home/$USER/Squeak5.2-*/shared`).
