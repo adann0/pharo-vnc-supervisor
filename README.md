@@ -8,7 +8,7 @@ A Docker image for [Squeak Smalltalk 5.2b](https://squeak.org/ "Squeak"). Especi
 - Debuggable via VNC.
 - Web browsers (Firefox and Chronium) are installed.
 
-# For Amd64
+# Quick Start
 
 ```bash
 docker run --name my_squeak -d -p 5901:5901 -p 6901:6901 adann0/squeak-vnc-supervisor:amd64
@@ -45,4 +45,4 @@ Please see [ubuntu-icewm-vnc](https://hub.docker.com/r/consol/ubuntu-icewm-vnc/)
 
 # ToDo :
 
-Without VNC Version (?) and Arm version ; un manifeste pour pull l'image sans l'architecture
+Une version headless
