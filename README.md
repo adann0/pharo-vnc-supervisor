@@ -11,7 +11,10 @@ A Docker image for [Squeak Smalltalk 5.2b](https://squeak.org/ "Squeak"). Especi
 # Quick Start
 
 ```bash
-docker run --name my_squeak -d -p 5901:5901 -p 6901:6901 adann0/squeak-vnc-supervisor
+docker run --name my_squeak \
+	-p 5901:5901 \
+	-p 6901:6901 \
+	-d adann0/squeak-vnc-supervisor
 ```
 
 You can access the running squeak image via VNC client or web browser.
@@ -20,7 +23,7 @@ You can access the running squeak image via VNC client or web browser.
 - VNC client:  `yourhost:5901`
 - Web browser: `http://yourhost:6901/?password=vncpassword`
 
-To backup your shared folder on the Docker host you can run something like this :
+To backup your shared folder/Squeak Image on the Docker host you can run something like this :
 
 ```bash
 docker cp <containerId>:/squeak/shared /your/backup/destination
@@ -32,9 +35,11 @@ docker cp <containerId>:/squeak/shared /your/backup/destination
 2. Use `docker run` `-v` option to mount the data direcotry.
 
 ```bash
-docker run --name my_squeak -d -p 5901:5901 -p 6901:6901 \
+docker run --name my_squeak \
+	-p 5901:5901 \
+	-p 6901:6901 \
 	-v /home/$USER/Squeak5.2-*/shared:/squeak/shared \
-	adann0/squeak-vnc-supervisor
+	-d adann0/squeak-vnc-supervisor
 ```
 
 ## Squeak related environment variables
