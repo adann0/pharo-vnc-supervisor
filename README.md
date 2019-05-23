@@ -45,4 +45,4 @@ Please see [ubuntu-icewm-vnc](https://hub.docker.com/r/consol/ubuntu-icewm-vnc/)
 
 # ToDo :
 
-Push l'image sur DockerHub + Une version headless sans VNC
+Push l'image sur DockerHub + Une version headless sans VNC et compatible Armv7
