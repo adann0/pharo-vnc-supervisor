@@ -58,4 +58,4 @@ docker build -t "squeak-vnc-supervisor:armv7" -f Dockerfile.armv7 .
 
 ## ToDo :
 
-Without VNC Version (?) and Arm version
+Without VNC Version (?) and Arm version ; un manifeste pour pull l'image sans l'architecture
