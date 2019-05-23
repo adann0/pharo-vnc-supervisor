@@ -34,9 +34,9 @@ docker run --name my_pharo -d -p 5901:5901 -p 6901:6901 \
 ### Pharo related environment variables
 
 ```bash
-PHARO_SUPERVISOR_LOG_NAME=squeak-supervisord.log
-PHARO_IMAGE=Squeak5.2-*.image
-PHARO_START_SCRIPT=
+SQUEAK_SUPERVISOR_LOG_NAME=squeak-supervisord.log
+SQUEAK_IMAGE=Squeak5.2-*.image
+SQUEAK_START_SCRIPT=
 ```
 
 ### VNC related environment variables
