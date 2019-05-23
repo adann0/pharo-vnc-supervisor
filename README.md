@@ -31,7 +31,7 @@ docker run --name my_squeak -d -p 5901:5901 -p 6901:6901 \
 	adann0/squeak-vnc-supervisor:amd64
 ```
 
-### Squeak related environment variables
+## Squeak related environment variables
 
 ```bash
 SQUEAK_SUPERVISOR_LOG_NAME=squeak-supervisord.log
@@ -44,6 +44,10 @@ SQUEAK_START_SCRIPT=
 Please see [ubuntu-icewm-vnc](https://hub.docker.com/r/consol/ubuntu-icewm-vnc/).
 
 # For Armv7
+
+## Pull
+
+## Build
 
 ```bash
 git clone https://github.com/ConSol/docker-headless-vnc-container.git &&
