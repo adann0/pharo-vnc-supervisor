@@ -26,12 +26,12 @@ You can access the running squeak image via VNC client or web browser.
 2. Use `docker run` `-v` option to mount the data direcotry.
 
 ```bash
-docker run --name my_pharo -d -p 5901:5901 -p 6901:6901 \
+docker run --name my_squeak -d -p 5901:5901 -p 6901:6901 \
 	-v /home/$USER/squeak:/squeak \
 	adann0/squeak-vnc-supervisor
 ```
 
-### Pharo related environment variables
+### Squeak related environment variables
 
 ```bash
 SQUEAK_SUPERVISOR_LOG_NAME=squeak-supervisord.log
