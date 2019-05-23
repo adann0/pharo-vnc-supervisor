@@ -42,3 +42,7 @@ SQUEAK_START_SCRIPT=
 ### VNC related environment variables
 
 Please see [ubuntu-icewm-vnc](https://hub.docker.com/r/consol/ubuntu-icewm-vnc/).
+
+## ToDo :
+
+Without VNC Version (?) and Arm version
