@@ -2,7 +2,7 @@
 
 _This repo is forked from [mumez/pharo-vnc-supervisor](https://github.com/mumez/pharo-vnc-supervisor "pharo-vnc-supervisor")_
 
-A Docker image for [Squeak Smalltalk](https://squeak.org/ "Squeak"). Especially suitable for web application development and delivery.
+A Docker image for [Squeak Smalltalk 5.2b](https://squeak.org/ "Squeak"). Especially suitable for web application development and delivery.
 
 - Squeak process is daemonized by supervisord.
 - Debuggable via VNC.
