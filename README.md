@@ -22,12 +22,12 @@ You can access the running squeak image via VNC client or web browser.
 
 ## How to start with a customized Squeak image
 
-1. Place your customized Squeak image to your docker-host data directory (For example, `/home/$USER/squeak`).
+1. Place your customized Squeak image to your docker-host data directory (For example, `/home/$USER/Squeak5.2-*/shared`).
 2. Use `docker run` `-v` option to mount the data direcotry.
 
 ```bash
 docker run --name my_squeak -d -p 5901:5901 -p 6901:6901 \
-	-v /home/$USER/squeak/shared:/squeak/shared \
+	-v /home/$USER/Squeak5.2-*/shared:/squeak/shared \
 	adann0/squeak-vnc-supervisor
 ```
 
