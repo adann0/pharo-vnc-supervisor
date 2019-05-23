@@ -11,7 +11,7 @@ A Docker image for [Squeak Smalltalk 5.2b](https://squeak.org/ "Squeak"). Especi
 # Quick Start
 
 ```bash
-docker run --name my_squeak -d -p 5901:5901 -p 6901:6901 adann0/squeak-vnc-supervisor:amd64
+docker run --name my_squeak -d -p 5901:5901 -p 6901:6901 adann0/squeak-vnc-supervisor
 ```
 
 You can access the running squeak image via VNC client or web browser.
@@ -28,7 +28,7 @@ You can access the running squeak image via VNC client or web browser.
 ```bash
 docker run --name my_squeak -d -p 5901:5901 -p 6901:6901 \
 	-v /home/$USER/squeak:/squeak \
-	adann0/squeak-vnc-supervisor:amd64
+	adann0/squeak-vnc-supervisor
 ```
 
 ## Squeak related environment variables
@@ -45,4 +45,4 @@ Please see [ubuntu-icewm-vnc](https://hub.docker.com/r/consol/ubuntu-icewm-vnc/)
 
 # ToDo :
 
-Une version headless
+Push l'image sur DockerHub + Une version headless sans VNC
