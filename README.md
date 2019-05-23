@@ -8,7 +8,7 @@ A Docker image for [Squeak Smalltalk 5.2b](https://squeak.org/ "Squeak"). Especi
 - Debuggable via VNC.
 - Web browsers (Firefox and Chronium) are installed.
 
-## Usages
+# For Amd64
 
 ```bash
 docker run --name my_squeak -d -p 5901:5901 -p 6901:6901 adann0/squeak-vnc-supervisor:amd64
@@ -20,7 +20,7 @@ You can access the running squeak image via VNC client or web browser.
 - VNC client:  `yourhost:5901`
 - Web browser: `http://yourhost:6901/?password=vncpassword`
 
-### How to start with a customized Squeak image
+## How to start with a customized Squeak image
 
 1. Place your customized Squeak image to your docker-host data directory (For example, `/home/$USER/squeak`).
 2. Use `docker run` `-v` option to mount the data direcotry.
@@ -39,11 +39,11 @@ SQUEAK_IMAGE=Squeak5.2-*.image
 SQUEAK_START_SCRIPT=
 ```
 
-### VNC related environment variables
+## VNC related environment variables
 
 Please see [ubuntu-icewm-vnc](https://hub.docker.com/r/consol/ubuntu-icewm-vnc/).
 
-## For Armv7
+# For Armv7
 
 ```bash
 git clone https://github.com/ConSol/docker-headless-vnc-container.git &&
@@ -56,6 +56,6 @@ cd squeak-vnc-supervisor &&
 docker build -t "squeak-vnc-supervisor:armv7" -f Dockerfile.armv7 .
 ```
 
-## ToDo :
+# ToDo :
 
 Without VNC Version (?) and Arm version ; un manifeste pour pull l'image sans l'architecture
