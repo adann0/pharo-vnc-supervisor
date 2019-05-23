@@ -43,6 +43,17 @@ SQUEAK_START_SCRIPT=
 
 Please see [ubuntu-icewm-vnc](https://hub.docker.com/r/consol/ubuntu-icewm-vnc/).
 
+## For Armv7
+
+git clone https://github.com/ConSol/docker-headless-vnc-container.git &&
+cd docker-headless-vnc-container &&
+sed -i '3s/ubuntu:16.04/arm32v7\/ubuntu:18.04/1' Dockerfile.ubuntu.icewm.vnc &&
+docker build -t "ubuntu-icewm-vnc:armv7" -f Dockerfile.ubuntu.icewm.vnc .
+
+git clone https://github.com/adann0/squeak-vnc-supervisor &&
+cd squeak-vnc-supervisor &&
+docker build -t "squeak-vnc-supervisor:armv7" -f Dockerfile.armv7 .
+
 ## ToDo :
 
 Without VNC Version (?) and Arm version
