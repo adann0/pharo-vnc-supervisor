@@ -3,10 +3,5 @@
 cmd="$1"
 
 /usr/local/bin/setup.sh
-
-if [ "${cmd}" == "save-pharo" ]; then
-     /usr/local/bin/save-pharo.sh ${@:2}
-else
-     /usr/bin/supervisord -n
-fi
+/usr/bin/supervisord -c /etc/supervisor/supervisord.conf -n
 exit $?
