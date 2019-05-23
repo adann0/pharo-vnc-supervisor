@@ -4,7 +4,7 @@ _This repo is forked from [mumez/pharo-vnc-supervisor](https://github.com/mumez/
 
 A Docker image for [Squeak Smalltalk](https://squeak.org/ "Squeak"). Especially suitable for web application development and delivery.
 
-- Pharo process is daemonized by supervisord.
+- Squeak process is daemonized by supervisord.
 - Debuggable via VNC.
 - Web browsers (Firefox and Chronium) are installed.
 
@@ -14,7 +14,7 @@ A Docker image for [Squeak Smalltalk](https://squeak.org/ "Squeak"). Especially 
 docker run --name my_squeak -d -p 5901:5901 -p 6901:6901 adann0/squeak-vnc-supervisor
 ```
 
-You can access the running pharo image via VNC client or web browser.
+You can access the running squeak image via VNC client or web browser.
 (the default password is 'vncpassword')
 
 - VNC client:  `yourhost:5901`
