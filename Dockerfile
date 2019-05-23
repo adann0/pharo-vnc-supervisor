@@ -33,7 +33,7 @@ ADD ./setup.sh /usr/local/bin/
 ADD ./docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
-VOLUME [ $SQUEAK_HOME ]
+VOLUME [ /squeak/shared ]
 EXPOSE 9000
 
 # Supervisor
